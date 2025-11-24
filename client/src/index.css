@@ -156,7 +156,9 @@
     padding-right: 1rem;
   }
 .bg-1{
-  background-image: url(../public/saints_images/svg.svg);
+  /* background-image: url(../public/saints_images/svg.svg); */
+ background-image: url(../src/assets/saints_images/svg.svg);
+ 
 }
   .flex {
     min-height: 0;

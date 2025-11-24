@@ -11,37 +11,37 @@ interface CarouselSlide {
 const slides: CarouselSlide[] = [
   {
     id: 1,
-    image: '/three.png',
+    image: '../src/assets/three.png',
     title: '',
     description: '',
   },
   {
     id: 2,
-    image: '/five.png',
+    image: '../src/assets/five.png',
     title: '',
     description: '',
   },
   {
     id: 3,
-    image: '/one.png',
+    image: '../src/assets/one.png',
     title: 'Venkaiah Swami',
     description: 'The Supreme Guru - Representing Brahma, Vishnu, and Shiva',
   },
   {
     id: 4,
-    image: '/four.png',
+    image: '../src/assets/four.png',
     title: 'Shirdi Sai Baba',
     description: 'The Compassionate Saint - A beacon of divine wisdom and spiritual guidance',
   },
   {
     id: 5,
-    image: '/two.png',
+    image: '../src/assets/two.png',
     title: 'Lord Dattatreya',
     description: 'The Divine Master - Blessed teachings of the enlightened saint',
   },
   {
     id: 6,
-    image: '/five.png',
+    image: '../src/assets/five.png',
     title: '',
     description: '',
   },
