@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import logo from '../assets/logo-smst.png';
+// import logo from '../assets/logo-smst.png';
 
 
 interface HeaderProps {
@@ -57,8 +57,8 @@ export default function Header({}: HeaderProps) {
             {/* Logo and Title */}
             <div className="flex items-center gap-3">
               <div className="smst-logo">
-             
-              <img src={logo} alt="SMST Logo" />
+              <img src="../src/assets/logo-smst.png" alt="" />
+              {/* <img src={logo} alt="SMST Logo" /> */}
               </div>
               <div>
                 <h1 className="text-1xl font-bold text-gray-800 font-serif">Sai Master Seva Trust</h1>
