@@ -6,6 +6,7 @@ import { defineConfig } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
 export default defineConfig({
+  // If deploying to GitHub Pages or a subdirectory, replace "/" with "./"
   base: "/",
 
   root: path.resolve(import.meta.dirname, "client"),
@@ -19,14 +20,13 @@ export default defineConfig({
 
   resolve: {
     alias: {
-    "@": path.resolve(import.meta.dirname, "client", "src"),
-    "@assets": path.resolve(import.meta.dirname, "client", "src", "assets"),
-}
-,
+      "@": path.resolve(import.meta.dirname, "client", "src"),
+      "@assets": path.resolve(import.meta.dirname, "client", "src", "assets"),
+    },
   },
 
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist"),
+    outDir: "../dist",   // cleaner & correct with custom root
     emptyOutDir: true,
   },
 
