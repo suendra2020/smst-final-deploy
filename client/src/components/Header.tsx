@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import logo from '../assets/logo-smst.png';
+
 
 interface HeaderProps {
   // Removed activeSection and onNavigate as they are no longer needed for section scrolling
@@ -54,7 +56,10 @@ export default function Header({}: HeaderProps) {
           <div className="flex items-center justify-between">
             {/* Logo and Title */}
             <div className="flex items-center gap-3">
-              <div className="smst-logo"><img src="../src/assets/logo-smst.png" alt="" /></div>
+              <div className="smst-logo">
+             
+              <img src={logo} alt="SMST Logo" />
+              </div>
               <div>
                 <h1 className="text-1xl font-bold text-gray-800 font-serif">Sai Master Seva Trust</h1>
                 <p className="text-1xl text-orange-600 text-sm slogan">Golagamudi, Andhra Pradesh</p>
