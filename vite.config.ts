@@ -26,8 +26,9 @@ export default defineConfig({
   },
 
   build: {
-    outDir: "../dist",   // cleaner & correct with custom root
-    emptyOutDir: true,
+    outDir: path.resolve(import.meta.dirname, "dist"),
+    emptyOutDir: true, // cleaner & correct with custom root
+  
   },
 
   server: {
